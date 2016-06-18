@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombreEtiqueta"
+        android:id="@+id/tvEtiquetaNombre"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/etiquetas"
+        android:textColor="@color/colorAccent"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Usuario"
+        android:id="@+id/textNombre"
+        android:textSize="@dimen/nombrecontacto"
+        android:layout_below="@+id/tvEtiquetaNombre"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/emailEtiqueta"
+        android:id="@+id/tvEtiquetaEmail"
+        android:textSize="@dimen/etiquetas"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/textNombre"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/telefonoEtiqueta"
+        android:id="@+id/tvEtiquetaTelefono"
+        android:textSize="@dimen/etiquetas"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/textEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descontactoEtiqueta"
+        android:id="@+id/tvEtiquetaDescCont"
+        android:textSize="@dimen/etiquetas"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/textTelefono"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="usuario-correo@gmail.com"
+        android:id="@+id/textEmail"
+        android:textSize="@dimen/nombrecontacto"
+        android:layout_below="@+id/tvEtiquetaEmail"
+        android:layout_alignLeft="@+id/textNombre"
+        android:layout_alignStart="@+id/textNombre" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5500000000"
+        android:id="@+id/textTelefono"
+        android:textSize="@dimen/nombrecontacto"
+        android:layout_below="@+id/tvEtiquetaTelefono"
+        android:layout_alignLeft="@+id/textEmail"
+        android:layout_alignStart="@+id/textEmail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="El usuario pertenece a la empresa XXW"
+        android:id="@+id/textdescconatcto"
+        android:textSize="@dimen/nombrecontacto"
+        android:layout_below="@+id/tvEtiquetaDescCont"
+        android:layout_alignLeft="@+id/textTelefono"
+        android:layout_alignStart="@+id/textTelefono" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/etiquetaFechaNacimiento"
+        android:id="@+id/tvFechaNacimiento"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/nombrecontacto"
+        android:layout_below="@+id/textdescconatcto"
+        android:layout_alignLeft="@+id/textdescconatcto"
+        android:layout_alignStart="@+id/textdescconatcto" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22/Mar/1993"
+        android:id="@+id/textFecha"
+        android:textSize="@dimen/nombrecontacto"
+        android:layout_below="@+id/tvFechaNacimiento"
+        android:layout_alignLeft="@+id/tvFechaNacimiento"
+        android:layout_alignStart="@+id/tvFechaNacimiento" />
+
+    <GridLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/botonSalir"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSalir"
+            android:theme="@style/SiguienteRaised"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/textTelefono"
+            android:layout_alignEnd="@+id/textTelefono"
+            android:layout_row="27"
+            android:layout_column="4" />
+
+        <Button
+            android:id="@+id/botonRegresar"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnEdidDatos"
+            android:theme="@style/SiguienteRaised"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/textNombre"
+            android:layout_toEndOf="@+id/textNombre"
+            android:layout_row="27"
+            android:layout_column="7" />
+
+    </GridLayout>
+
+</RelativeLayout>

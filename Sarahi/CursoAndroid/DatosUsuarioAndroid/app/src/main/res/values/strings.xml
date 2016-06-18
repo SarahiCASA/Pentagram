@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Datos de Usuario</string>
+    <string name="btnSiguiente">Siguiente</string>
+    <string name="btnEdidDatos">Editar Datos</string>
+    <string name="btnSalir">Salir</string>
+    <string name="mensaje">Hola, Botón Siguiente...</string>
+    <string name="texto_accion">Acción</string>
+    <string name="nombre">Nombre Completo</string>
+    <string name="email">Email</string>
+    <string name="telefono">Teléfono</string>
+    <string name="desccontacto">Descripción Contacto</string>
+    <string name="pNombre">Nombre</string>
+    <string name="pEmail">Email</string>
+    <string name="pTelefono">Teléfono</string>
+    <string name="pDescContacto">DescripcionContacto</string>
+    <string name="pick_time">01/02/19995</string>
+    <string name="etiquetaFechaNacimiento">Fecha de Nacimiento</string>
+
+    <string name="nombreEtiqueta">Nombre Usuario :</string>
+    <string name="emailEtiqueta">Email Usuario :</string>
+    <string name="telefonoEtiqueta">Teléfono Usuario :</string>
+    <string name="descontactoEtiqueta">Descripción Contacto :</string>
+</resources>

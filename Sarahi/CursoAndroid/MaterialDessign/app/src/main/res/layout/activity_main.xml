@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.desarrolloweb.materialdessign.MainActivity"
-    android:background="@color/accent_material_dark">
+    android:background="@color/colorPrimaryDark">
 
     <TextView
         android:layout_width="wrap_content"
@@ -18,7 +18,8 @@
         android:layout_marginTop="178dp"
         style="@style/Base.TextAppearance.AppCompat.Display1"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/titleTextColor" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -28,7 +29,7 @@
         android:id="@+id/button"
         android:layout_marginBottom="78dp"
         android:background="@color/colorPrimary"
-        android:textColor="@color/bright_foreground_inverse_material_light"
+        android:textColor="@color/colorBackground"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:width="100dp" />
