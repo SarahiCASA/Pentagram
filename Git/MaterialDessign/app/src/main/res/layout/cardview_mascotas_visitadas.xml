@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvMascotasVisitadas"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/cardview_default_elevation">
+
+        <ImageView
+            android:id="@+id/imgFotoMascotaVisitada"
+            android:layout_width="250dp"
+            android:layout_height="210dp"
+            android:src="@drawable/buldogfrances"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:text="@string/mascota"
+                android:textSize="@dimen/nombreCV"
+                android:id="@+id/nombreMascotaVisitada"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:text="@string/raza"
+                android:textSize="@dimen/nombreCV"
+                android:id="@+id/RazaMascotaVisitada"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageButton
+                android:id="@+id/btnLikeMascotaVisitada"
+                android:layout_height="@dimen/botonImage"
+                android:layout_width="@dimen/botonImage"
+                android:background="@drawable/hueso"
+                />
+
+            <ImageView
+                android:id="@+id/imgHuesoAmarilloMascotaVisitada"
+                android:layout_width="57dp"
+                android:layout_height="36dp"
+                android:src="@drawable/huesoamarillo"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
