@@ -6,4 +6,7 @@
     <dimen name="nombreRaza">18dp</dimen>
     <dimen name="botonImage">26dp</dimen>
     <dimen name="elevacionActionBar">4dp</dimen>
+    <dimen name="nombrecontacto">18dp</dimen>
+    <dimen name="etiquetas">25dp</dimen>
+    <dimen name="paddingInicio">20dp</dimen>
 </resources>
