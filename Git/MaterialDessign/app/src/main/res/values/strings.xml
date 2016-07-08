@@ -22,6 +22,7 @@
     <string name="tvCorreo">Correo Eléctronico :</string>
     <string name="tvTelefono">Teléfono :</string>
     <string name="tvContenido">Contenido Correo Eléctronico :</string>
+    <string name="plikes">0 Likes</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

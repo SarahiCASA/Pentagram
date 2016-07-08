@@ -11,78 +11,75 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_margin="@dimen/cardview_default_elevation">
 
         <ImageView
             android:id="@+id/imgFoto"
             android:layout_width="250dp"
             android:layout_height="210dp"
-            android:src="@drawable/buldogfrances"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+            android:src="@drawable/buldogfrances"/>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="122dp"
-                android:layout_height="wrap_content"
-                android:text="@string/mascota"
-                android:textSize="@dimen/nombreCV"
-                android:id="@+id/nombre"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+            android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="122dp"
-                android:layout_height="wrap_content"
-                android:text="@string/raza"
-                android:textSize="@dimen/nombreRaza"
-                android:id="@+id/mascotaRaza"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-            <RelativeLayout
+            <ImageButton
+                android:id="@+id/btnLike"
+                android:layout_height="38dp"
+                android:layout_width="38dp"
+                android:background="@drawable/hueso"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_alignTop="@+id/imgHuesoAmarillo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/btnLike"
-                    android:layout_height="57dp"
-                    android:layout_width="36dp"
-                    android:background="@drawable/hueso"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignBottom="@+id/imgHuesoAmarillo" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                >
 
                 <TextView
-                    android:layout_width="120dp"
+                    android:layout_width="122dp"
                     android:layout_height="wrap_content"
-                    android:text="1"
-                    android:textSize="30dp"
-                    android:id="@+id/raiting"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignBottom="@+id/btnLike"
-                    android:layout_alignLeft="@+id/imgHuesoAmarillo"
-                    android:layout_alignStart="@+id/imgHuesoAmarillo" />
+                    android:text="@string/mascota"
+                    android:textSize="@dimen/nombreCV"
+                    android:id="@+id/nombre" />
 
-                <ImageView
-                    android:id="@+id/imgHuesoAmarillo"
-                    android:layout_width="57dp"
-                    android:layout_height="36dp"
-                    android:src="@drawable/huesoamarillo"
+                <TextView
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/raza"
+                    android:textSize="@dimen/nombreRaza"
+                    android:id="@+id/mascotaRaza"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_toRightOf="@+id/btnLike"
-                    android:layout_toEndOf="@+id/btnLike" />
-            </RelativeLayout>
+                    android:layout_alignParentEnd="true" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/plikes"
+                android:textSize="@dimen/nombreRaza"
+                android:id="@+id/tvLikes"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:id="@+id/imgHuesoAmarillo"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/huesoamarillo"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
 
 
-        </LinearLayout>
+
+        </RelativeLayout>
     </LinearLayout>
 </android.support.v7.widget.CardView>

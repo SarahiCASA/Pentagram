@@ -1,5 +1,29 @@
 <resources>
+    <string name="btnEnviarEmail">Enviar Correo Eléctronico</string>
     <string name="app_name">Mascotas</string>
     <string name="mascota">Mascota</string>
     <string name="raza">Raza</string>
+    <string name="about">About</string>
+    <string name="aboutApp">Mascota Perfecta</string>
+    <string name="datos">Enviar Correo</string>
+    <string name="correo">Correo Eléctronico</string>
+    <string name="aboutTitle">Acerca de la configuración de la Aplicación</string>
+    <string name="aboutOp1">Los que convivimos con animales no humanos sabemos, por un lado, que criarlos es casi como criar a un hijo a pequeña escala, y por otro, que dicha crianza requiere un compromiso firme y los conocimiento adecuados para que sea saludable.</string>
+    <string name="aboutOp2">Y como una ayuda para lograrlo nunca viene mas, en está aplicación podrás ver que Mascotas son las más visitadas, y si estás interesado en adoptar una Mascota, puedes enviar un correo
+    eléctronico, o bien si tienes alguna duda acerca del <b>proceso de adopción</b>, o algún comentario lo podrás enviar a través de un correo eléctronico.
+    </string>
+    <string name="Cooreo">Y como una ayuda para lograrlo nunca viene mas, en está aplicación podrás ver que Mascotas son las más visitadas, y si estás interesado en adoptar una Mascota, puedes enviar un correo
+    eléctronico, o bien si tienes alguna duda acerca del <b>proceso de adopción</b>, o algún comentario lo podrás enviar a través de un correo eléctronico.</string>
+    <string name="aboutOp3">Si estás pensando adoptar a un cachorro y quieres conocer las características de cada raza canina y cuál te vendría mejor según tu vivienda y tus hábitos, esta es la aplicación perfecta para ti.</string>
+    <string name="btnSiguiente">Siguiente</string>
+    <string name="btnEdidDatos">Editar Datos</string>
+    <string name="btnSalir">Salir</string>
+    <string name="tvNombre">Nombre :</string>
+    <string name="tvCorreo">Correo Eléctronico :</string>
+    <string name="tvTelefono">Teléfono :</string>
+    <string name="tvContenido">Contenido Correo Eléctronico :</string>
+    <string name="plikes">0 Likes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
