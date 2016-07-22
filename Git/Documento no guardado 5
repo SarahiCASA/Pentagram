@@ -1,0 +1,43 @@
+https://api.instagram.com/oauth/authorize/?client_id=bdc9637c52164e5cb2db6ad66dc2eda0&redirect_uri=https://www.instagram.com/sarahiceif/&response_type=code&scope=basic+comments+follower_list+likes+relationships+public_content
+
++
+
+https://www.instagram.com/sarahiceif/?code=8f9d38f22e664b7586192ca28a9d2bf6
+
+curl -F 'client_id=bdc9637c52164e5cb2db6ad66dc2eda0' \
+    -F 'client_secret=a53dc1d347674b0dbe00d818fd136c6e' \
+    -F 'grant_type=authorization_code' \
+    -F 'redirect_uri=https://www.instagram.com/sarahiceif/' \
+    -F 'code=4190e832456e423bb5b0586f1f02af90' \
+    https://api.instagram.com/oauth/access_token
+
+curl -F 'client_id=bdc9637c52164e5cb2db6ad66dc2eda0' \
+    -F 'client_secret=a53dc1d347674b0dbe00d818fd136c6e' \
+    -F 'grant_type=authorization_code' \
+    -F 'redirect_uri=https://www.instagram.com/sarahiceif/' \
+    -F 'code=8df32d849e47475fa868f78c793d114d' \
+    https://api.instagram.com/oauth/access_token
+
+
+{"username": "sarahiceif", "bio": "", "website": "", "profile_picture": 
+"https://scontent.cdninstagram.com/t51.2885-19/s150x150/13649216_543170859207866_1370274926_a.jpg", "full_name": "Sarahi Camacho", "id": "3571553443"}}
+
+
+
+http://https://www.instagram.com/sarahiceif/?code=8f9d38f22e664b7586192ca28a9d2bf6
+https://www.instagram.com/sarahiceif/?code=4190e832456e423bb5b0586f1f02af90
+https://www.instagram.com/sarahiceif/?code=8f9d38f22e664b7586192ca28a9d2bf6
+
+curl -F 'client_id=CLIENT_ID' \
+    -F 'client_secret=CLIENT_SECRET' \
+    -F 'grant_type=authorization_code' \
+    -F 'redirect_uri=AUTHORIZATION_REDIRECT_URI' \
+    -F 'code=CODE' \
+    https://api.instagram.com/oauth/access_token
+
+
+********************
+
+3571553443.bdc9637.b7c90b214aff430db36c448002e9b37d
+
+{"access_token": "3571553443.bdc9637.b7c90b214aff430db36c448002e9b37d", "user": {"username": "sarahiceif", "bio": "", "website": "", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/13649216_543170859207866_1370274926_a.jpg", "full_name": "Sarahi Camacho", "id": "3571553443"}}

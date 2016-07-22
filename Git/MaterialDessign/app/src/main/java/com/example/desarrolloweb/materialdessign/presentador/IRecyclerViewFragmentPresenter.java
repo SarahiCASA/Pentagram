@@ -8,4 +8,6 @@ public interface IRecyclerViewFragmentPresenter {
     public void obtenerDatosBaseDatos ();
 
     public void mostrarDatosRV();
+
+    public void obtenerMediosRecientes();
 }

@@ -22,7 +22,7 @@ public class RecyclerViewFragmentPresenterMV implements IRecyclerViewFragmentPre
     public RecyclerViewFragmentPresenterMV(IRecyclerViewFragmentView iRecyclerViewFragmentView, Context context) {
         this.iRecyclerViewFragmentView = iRecyclerViewFragmentView;
         this.context = context;
-        obtenerDatosBaseDatos();
+        //obtenerDatosBaseDatos();
     }
 
 
@@ -38,6 +38,11 @@ public class RecyclerViewFragmentPresenterMV implements IRecyclerViewFragmentPre
     public void mostrarDatosRV() {
         iRecyclerViewFragmentView.inicializarAdaptadorRV(iRecyclerViewFragmentView.crearAdaptador(mascotas));
         iRecyclerViewFragmentView.generarGridLayout();
+    }
+
+    @Override
+    public void obtenerMediosRecientes() {
+
     }
 
 

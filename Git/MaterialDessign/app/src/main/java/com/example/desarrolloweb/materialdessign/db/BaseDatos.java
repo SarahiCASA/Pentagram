@@ -31,7 +31,7 @@ public class BaseDatos extends SQLiteOpenHelper {
                 ConstantesBaseDatos.TABLE_PETS_ID       + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 ConstantesBaseDatos.TABLE_PETS_NOMBRE   + " TEXT, "     +
                 ConstantesBaseDatos.TABLE_PETS_RAZA     + " TEXT, "     +
-                ConstantesBaseDatos.TABLE_PETS_FOTO     + " INTEGER "  +
+                ConstantesBaseDatos.TABLE_PETS_FOTO     + " INTEGER "   +
                 ")";
 
         String queryCrearTablaLikesContatco = "CREATE TABLE " + ConstantesBaseDatos.TABLE_LIKES_MASCOTAS + "(" +
@@ -71,7 +71,7 @@ public class BaseDatos extends SQLiteOpenHelper {
         int contador = 1;
         while (registros.moveToNext()  ) {
 
-            if(contador <= 5){
+            /*if(contador <= 5){
                 Mascotas mascotaActual = new Mascotas();
                 mascotaActual.setId(registros.getInt(0));
                 mascotaActual.setNombre(registros.getString(1));
@@ -91,7 +91,7 @@ public class BaseDatos extends SQLiteOpenHelper {
                 }
 
                 mascotas.add(mascotaActual);
-            }
+            }*/
             contador ++;
 
         }
@@ -113,10 +113,10 @@ public class BaseDatos extends SQLiteOpenHelper {
 
             if(contador <= 5){
                 Mascotas mascotaActual = new Mascotas();
-                mascotaActual.setId(registros.getInt(0));
-                mascotaActual.setNombre(registros.getString(1));
+                //mascotaActual.setId(registros.getInt(0));
+                /*mascotaActual.setNombre(registros.getString(1));
                 mascotaActual.setRaza(registros.getString(2));
-                mascotaActual.setFoto(registros.getInt(3));
+                mascotaActual.setFoto(registros.getInt(3));*/
 
                 /*String queryLikes = "SELECT COUNT(" + ConstantesBaseDatos.TABLE_LIKES_MASCOTAS_NUMERO_LIKES +") as likes " +
                         " FROM " + ConstantesBaseDatos.TABLE_LIKES_MASCOTAS +

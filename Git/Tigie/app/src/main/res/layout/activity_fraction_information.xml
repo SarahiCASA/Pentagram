@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sistemascasa.tigie.FractionInformationActivity">
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar">
+    </include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvInformation"
+        android:text="@string/tvInformation"
+        style="@style/styleChapituloCode"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_chapters"
+        android:layout_below="@+id/miActionBar"/>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@+id/tvInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:id="@+id/tableLayout">
+        <TableRow>
+            <TextView
+                android:id="@+id/tvFracChapter"
+                android:text="@string/idCapitulo"
+                android:gravity="right"
+                android:layout_width="90sp"
+                android:padding="3dip"
+                android:textStyle="bold"
+                style="@style/styleChapterDescr"/>
+            <TextView
+                android:id="@+id/fracChapter"
+                android:text="01"
+                android:gravity="right"
+                android:paddingRight="20dip"/>
+            <TextView
+                android:id="@+id/fracChapterDesc"
+                android:text="Animales vivos"
+                android:layout_width="180sp"
+                android:gravity="left"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvFracHeading"
+                android:text="@string/parti"
+                android:gravity="right"
+                android:layout_width="90sp"
+                android:padding="3dip"
+                android:textStyle="bold"
+                style="@style/styleChapterDescr"/>
+            <TextView
+                android:id="@+id/fracHeading"
+                android:text="0101"
+                android:gravity="right"
+                android:paddingRight="20dip"/>
+            <TextView
+                android:id="@+id/fracHeadingDesc"
+                android:text="Caballos, asnos, mulos y burdéganos, vivos."
+                android:layout_width="180sp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvFracSubHeading"
+                android:text="@string/subparti"
+                android:gravity="right"
+                android:layout_width="90sp"
+                android:padding="3dip"
+                android:textStyle="bold"
+                style="@style/styleChapterDescr"/>
+            <TextView
+                android:id="@+id/fracSubHeading"
+                android:text="010112"
+                android:gravity="right"
+                android:paddingRight="20dip"/>
+            <TextView
+                android:id="@+id/fracSubHeadingDesc"
+                android:text="Ballenas, delfines y marsopas (mamíferos del orden Cetáceos); manatíes y dugones o dugongos (mamíferos del orden Sirenios); otarios y focas, leones marinos y morsas (mamíferos del suborden Pinnipedia)."
+                android:layout_width="180sp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvFrac"
+                android:text="@string/fracc"
+                android:gravity="right"
+                android:layout_width="90sp"
+                android:padding="5dip"
+                android:textStyle="bold"
+                style="@style/styleChapterDescr"/>
+            <TextView
+                android:id="@+id/fracCode"
+                android:text="01011212"
+                android:gravity="right"
+                android:paddingRight="20dip"/>
+            <TextView
+                android:id="@+id/fracDesc"
+                android:text="Con pedigree o certificado de alto registro."
+                android:layout_width="180sp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="3dip" />
+        </TableRow>
+
+
+
+    </TableLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@color/colorAccent"
+        android:padding="25dip"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp" />
+
+</RelativeLayout>

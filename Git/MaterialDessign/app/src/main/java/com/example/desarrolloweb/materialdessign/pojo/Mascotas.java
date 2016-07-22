@@ -5,61 +5,50 @@ package com.example.desarrolloweb.materialdessign.pojo;
  */
 public class Mascotas {
 
-    private int id;
-    private String nombre;
-    private int foto;
-    private int raiting;
-    private String raza;
+    private String id;
+    private String nombreCompleto;
+    private String urlFoto;
+    private int likes;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getUrlFoto() {
+        return urlFoto;
+    }
+
+    public void setUrlFoto(String urlFoto) {
+        this.urlFoto = urlFoto;
+    }
+
+    public int getLikes() {
+        return likes;
+    }
+
+    public void setLikes(int likes) {
+        this.likes = likes;
+    }
+
+    public String getNombreCompleto() {
+        return nombreCompleto;
+    }
+
+    public void setNombreCompleto(String nombreCompleto) {
+        this.nombreCompleto = nombreCompleto;
+    }
 
     public Mascotas() {
 
     }
 
-    public String getRaza() {
-        return raza;
-    }
-
-    public void setRaza(String raza) {
-        this.raza = raza;
-    }
-
-    public int getRaiting() {
-        return raiting;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setRaiting(int raiting) {
-        this.raiting = raiting;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public int getFoto() {
-        return foto;
-    }
-
-    public void setFoto(int foto) {
-        this.foto = foto;
-    }
-
-    public Mascotas( String nombre, String raza, int foto, int raiting) {
-        this.foto = foto;
-        this.nombre = nombre;
-        this.raza = raza;
-        this.raiting = raiting;
-
+    public Mascotas( String urlFoto, String nombreCompleto, int likes) {
+        this.urlFoto = urlFoto;
+        this.nombreCompleto = nombreCompleto;
+        this.likes = likes;
     }
 }

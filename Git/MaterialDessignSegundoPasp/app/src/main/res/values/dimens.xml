@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nombreCV">26dp</dimen>
+    <dimen name="nombreRaza">18dp</dimen>
+    <dimen name="botonImage">26dp</dimen>
+    <dimen name="elevacionActionBar">4dp</dimen>
+    <dimen name="nombrecontacto">18dp</dimen>
+    <dimen name="etiquetas">25dp</dimen>
+    <dimen name="paddingInicio">20dp</dimen>
+</resources>
