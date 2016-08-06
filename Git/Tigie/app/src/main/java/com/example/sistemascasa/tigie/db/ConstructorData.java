@@ -26,11 +26,22 @@ public class ConstructorData {
     }
 
     public ArrayList<Chapters> getChapters ()  {
-        BaseDatos db = new BaseDatos(context);
-        /*ChaptersData chad = new ChaptersData();
+        /*BaseDatos db = new BaseDatos(context);
+        ChaptersData chad = new ChaptersData();
         chad.insertChaptersData(db);
-        HeadingsData headingsData = new HeadingsData();
-        headingsData.InsertHeadingsData(db);*/
+        /*HeadingsData headingsData = new HeadingsData();
+        headingsData.InsertHeadingsData(db);
+        return db.getAllChapters();*/
+
+        BaseDatos db = new BaseDatos(context);
+
+        TestAdapter mDbHelper = new TestAdapter(context);
+        mDbHelper.createDatabase();
+        mDbHelper.open();
+
+        Cursor testdata = mDbHelper.getTestData();
+
+        mDbHelper.close();
         return db.getAllChapters();
 
     }

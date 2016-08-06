@@ -95,6 +95,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent2);
                 break;
 
+            case R.id.mEnviarNotificaciones:
+                Intent intent4 = new Intent (this, EnviarNotificaciones.class);
+                startActivity(intent4);
+                break;
+
             case R.id.mRefresh:
                 Intent intent3   = new Intent(MainActivity.this, VisitadasMascotas.class);
                 startActivity(intent3);

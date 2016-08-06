@@ -3,6 +3,7 @@
     package="com.example.desarrolloweb.materialdessign">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,8 +21,20 @@
             </intent-filter>
         </activity>
         <activity android:name=".about" />
-        <activity android:name=".datos_usuario"> </activity>
+        <activity android:name=".datos_usuario"></activity>
 
+        <service android:name=".NotificationService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".NotificacionIDTokenService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".EnviarNotificaciones"></activity>
     </application>
 
 </manifest>

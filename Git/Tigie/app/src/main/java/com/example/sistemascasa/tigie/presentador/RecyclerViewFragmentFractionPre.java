@@ -1,6 +1,7 @@
 package com.example.sistemascasa.tigie.presentador;
 
 import android.content.Context;
+import android.support.v7.widget.RecyclerView;
 
 import com.example.sistemascasa.tigie.R;
 import com.example.sistemascasa.tigie.db.ConstructorData;
@@ -19,6 +20,7 @@ public class RecyclerViewFragmentFractionPre  implements IRecyclerViewFragmentFr
 
     private IRecyclerview_Fractions iRecyclerview_fractions;
     private Context context;
+    private RecyclerView listHeadings;
     private ConstructorData constructorData;
     private ArrayList<Fractions> fractions;
 

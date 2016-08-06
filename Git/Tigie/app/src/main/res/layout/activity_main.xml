@@ -1,49 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.sistemascasa.tigie.MainActivity">
+    tools:context="com.example.sistemascasa.tigie.HeadingsActivity">
+
 
     <include android:id="@+id/miActionBar"
         layout="@layout/actionbar">
     </include>
 
-    <android.support.design.widget.AppBarLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        >
+        android:layout_below="@+id/miActionBar"
+        android:id="@+id/rlEncabezado">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_scrollFlags="scroll|enterAlways"
-            >
-        </android.support.v7.widget.Toolbar>
+            android:id="@+id/editText"
+            android:hint="Ingrese una Fracción "
+            android:layout_marginLeft="@dimen/padding_left"
+            android:layout_toLeftOf="@+id/search_button" />
 
-        <android.support.design.widget.TabLayout
-            android:id="@+id/tabLayout"
-            android:layout_width="match_parent"
+        <ImageButton
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            >
-        </android.support.design.widget.TabLayout>
+            android:id= "@+id/search_button"
+            android:src="@drawable/search_48"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
+    </RelativeLayout>
 
-
-    </android.support.design.widget.AppBarLayout>
-
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        >
-    </android.support.v4.view.ViewPager>
+        android:id="@+id/tvChapters"
+        android:text="@string/capitulos"
+        style="@style/styleChapituloCode"
+        android:layout_below="@+id/rlEncabezado"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/text_chapters"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvChapters"
+        android:layout_below="@+id/tvChapters"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
 
 
-   </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

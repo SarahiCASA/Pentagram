@@ -32,4 +32,7 @@ public class RestApiAdapter {
         return gsonBuilder.create();
     }
 
+
+
+
 }

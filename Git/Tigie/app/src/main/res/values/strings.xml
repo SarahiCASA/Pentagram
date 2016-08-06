@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">Tarifa General de Importación y<br> Exportación de México</br></string>
+    <string name="app_name">Tarifa General</string>
+    <string name="capitulos">Capitulos</string>
+    <string name="search">Buscar</string>
     <string name="id_chapter">1</string>
     <string name="chapter">00</string>
     <string name="chapterDescr">Sin descripción.</string>

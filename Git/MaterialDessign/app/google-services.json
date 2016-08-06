@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "887377516391",
+    "firebase_url": "https://materialdessign.firebaseio.com",
+    "project_id": "materialdessign",
+    "storage_bucket": "materialdessign.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887377516391:android:84988e67ad96ea35",
+        "android_client_info": {
+          "package_name": "com.example.desarrolloweb.materialdessign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887377516391-tvslat0evmunkdl84eehijfpla38a7fj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.desarrolloweb.materialdessign",
+            "certificate_hash": "DD1A59AD5686FB28D3BE7730D32DE31533CC99DD"
+          }
+        },
+        {
+          "client_id": "887377516391-cnbbi6vhgs73cbmjnonvm5kcdmtts88s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUHc0ngD5nWbcSosu4iY7jSY5jvV6N3wA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887377516391-cnbbi6vhgs73cbmjnonvm5kcdmtts88s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
