@@ -12,6 +12,7 @@ import com.example.sistemascasa.tigie.pojo.Chapters;
 import com.example.sistemascasa.tigie.pojo.Fractions;
 import com.example.sistemascasa.tigie.pojo.Headings;
 import com.example.sistemascasa.tigie.pojo.Subheadings;
+import com.example.sistemascasa.tigie.pojo.Tlc;
 
 import java.util.ArrayList;
 
@@ -24,7 +25,7 @@ public class ConstructorData {
     public ConstructorData (Context context){
         this.context = context;
     }
-
+    ArrayList<Tlc> tlcs;
     public ArrayList<Chapters> getChapters ()  {
         /*BaseDatos db = new BaseDatos(context);
         ChaptersData chad = new ChaptersData();
@@ -59,6 +60,26 @@ public class ConstructorData {
     public ArrayList<Fractions> getFractions (int idTariffSubheading) {
         BaseDatos db1 = new BaseDatos(this.context);
         return db1.getFractionsBD(idTariffSubheading);
+    }
+
+    public ArrayList<Tlc> getTlc () {
+        tlcs = new ArrayList<Tlc>();
+
+        //int idTlcCountry, int idTariffFraction, String tlcCountry, String tlcDof, String tlcAdval, int tlcFlag, String tlcCode
+        tlcs.add(new Tlc(1,2,"Estados Unidos", "2016/02/10", "Excluida", R.drawable.eua, "USA"));
+        tlcs.add(new Tlc(1,2,"Canada", "2016/02/10", "Excluida", R.drawable.canada, "CAN"));
+        tlcs.add(new Tlc(1,2,"Uruguay", "2016/02/10", "Excluida", R.drawable.uruguay, "URY"));
+        tlcs.add(new Tlc(1,2,"Estados Unidos", "2016/02/10", "Excluida", R.drawable.eua, "USA"));
+        tlcs.add(new Tlc(1,2,"Canada", "2016/02/10", "Excluida", R.drawable.canada, "CAN"));
+        tlcs.add(new Tlc(1,2,"Uruguay", "2016/02/10", "Excluida", R.drawable.uruguay, "URY"));tlcs.add(new Tlc(1,2,"Estados Unidos", "2016/02/10", "Excluida", R.drawable.eua, "USA"));
+        tlcs.add(new Tlc(1,2,"Canada", "2016/02/10", "Excluida", R.drawable.canada, "CAN"));
+        tlcs.add(new Tlc(1,2,"Uruguay", "2016/02/10", "Excluida", R.drawable.uruguay, "URY"));
+        tlcs.add(new Tlc(1,2,"Estados Unidos", "2016/02/10", "Excluida", R.drawable.eua, "USA"));
+        tlcs.add(new Tlc(1,2,"Canada", "2016/02/10", "Excluida", R.drawable.canada, "CAN"));
+        tlcs.add(new Tlc(1,2,"Uruguay", "2016/02/10", "Excluida", R.drawable.uruguay, "URY"));
+
+
+        return tlcs;
     }
 
 }

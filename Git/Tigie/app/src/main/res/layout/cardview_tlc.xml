@@ -1,0 +1,127 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/cvChapters"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/padding_top"
+    android:layout_marginRight="@dimen/padding_top"
+    android:layout_marginTop="@dimen/padding_top"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+
+
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/cardview_default_elevation"
+        android:background="@color/colorDiverColor"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:id="@+id/ivFlagIcon"
+            android:src="@drawable/eua"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/padding_top"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/idTlcCountry"
+                android:text="ID"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/idTariffFractionTlc"
+                android:text="IDFracc"
+                android:layout_below="@+id/linearLayout"
+                android:layout_alignLeft="@+id/ivFlagIcon"
+                android:layout_alignStart="@+id/ivFlagIcon"
+                android:layout_marginLeft="72dp"
+                android:layout_marginStart="72dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/tlcCountry"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDof"
+                android:text="DOF : "
+                android:textStyle="bold"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="21dp"
+                android:layout_marginStart="21dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAdval"
+                android:text="Adval : "
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tlcCountry"
+            android:text="tlcCountry"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_below="@+id/ivFlagIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tlcDof"
+            android:text="tlcDof"
+            android:textSize="12sp"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_toLeftOf="@+id/ivFlagIcon"
+            android:layout_toStartOf="@+id/ivFlagIcon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tlcAdval"
+            android:text="tlcAdval"
+            android:textSize="12sp"
+            android:layout_marginRight="21dp"
+            android:layout_marginEnd="21dp"
+            android:layout_alignTop="@+id/tlcDof"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

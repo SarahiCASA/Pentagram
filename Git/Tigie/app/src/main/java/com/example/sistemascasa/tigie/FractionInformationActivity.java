@@ -1,17 +1,18 @@
 package com.example.sistemascasa.tigie;
 
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ImageView;
+import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
-import com.example.sistemascasa.tigie.pojo.Chapters;
+import com.example.sistemascasa.tigie.adapter.PageAdapter;
 import com.example.sistemascasa.tigie.pojo.InfFRaction;
 import com.example.sistemascasa.tigie.rest.InfFractionService;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import retrofit.Callback;
 import retrofit.RestAdapter;
@@ -19,54 +20,42 @@ import retrofit.RetrofitError;
 import retrofit.client.Response;
 
 public class FractionInformationActivity extends AppCompatActivity {
-    TextView fracCode;
-    TextView fracDesc;
-    TextView fracChapter;
-    TextView fracChapterDesc;
-    TextView fracHeading;
-    TextView fracHeadingDesc;
-    TextView fracSubHeading;
-    TextView fracSubHeadingDesc;
+
+    private Toolbar toolbar;
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fraction_information);
 
-        Bundle parametros               = getIntent().getExtras();
-        String fractionCodigo           = parametros.getString("fractionCode");
-        fractionCodigo = "87021002";
-        RestAdapter restAdapter = new RestAdapter.Builder().setLogLevel(RestAdapter.LogLevel.FULL).setEndpoint("http://10.40.68.153:8080/").build();
-        fracCode               = (TextView) findViewById(R.id.fracCode);
-        fracDesc               = (TextView) findViewById(R.id.fracDesc);
-        fracChapter            = (TextView) findViewById(R.id.fracChapter);
-        fracChapterDesc        = (TextView) findViewById(R.id.fracChapterDesc);
-        fracHeading            = (TextView) findViewById(R.id.fracHeading);
-        fracHeadingDesc        = (TextView) findViewById(R.id.fracHeadingDesc);
-        fracSubHeading         = (TextView) findViewById(R.id.fracSubHeading);
-        fracSubHeadingDesc     = (TextView) findViewById(R.id.fracSubHeadingDesc);
+        toolbar = (Toolbar) findViewById(R.id.toolbar2);
+        tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        viewPager = (ViewPager) findViewById(R.id.viewPager);
 
-        InfFractionService service = restAdapter.create(InfFractionService.class);
 
-        service.getInformationData(fractionCodigo,new Callback<InfFRaction>() {
-            @Override
-            public void success(InfFRaction infFRaction, Response response) {
+        if(toolbar != null) {
+            setSupportActionBar(toolbar);
+        }
+        setupViewPager();
 
-                fracChapter.setText(infFRaction.getTariffChapterCode());
-                fracChapterDesc.setText(infFRaction.getTariffChapterDescription());
-                fracHeading.setText(infFRaction.getTariffHeadingCode());
-                fracHeadingDesc.setText(infFRaction.getTariffHeadingDescription());
-                fracSubHeading.setText(infFRaction.getTariffSubheadingCode());
-                fracSubHeadingDesc.setText(infFRaction.getTariffSubheadingDescription());
-                fracCode.setText(infFRaction.getTariffFractionCode());
-                fracDesc.setText(infFRaction.getTariffFractionDescription());
-            }
+    }
 
-            @Override
-            public void failure(RetrofitError error) {
-                System.out.println("Hola 2");
-            }
-        });
+    private ArrayList<Fragment> agregarFragments() {
+        ArrayList<Fragment> fragments = new ArrayList<>();
 
+        fragments.add(new InformationFraccionFragment());
+        fragments.add(new TlcFragmen());
+
+        return fragments;
+    }
+
+    private void setupViewPager () { //Pasando soporte de fragemnets, y lista que queremos agregar al adapter fragments
+        viewPager.setAdapter(new PageAdapter(getSupportFragmentManager(), agregarFragments()));
+        tabLayout.setupWithViewPager(viewPager);
+
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_barco);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_world);
     }
 }

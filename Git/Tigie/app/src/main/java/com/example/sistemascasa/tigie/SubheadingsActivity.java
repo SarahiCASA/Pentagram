@@ -37,12 +37,10 @@ public class SubheadingsActivity extends AppCompatActivity implements IRecyclerv
         //int imagen                 = parametrosHeading.getInt(getResources().getString(R.string.iconChapter));
         int idHeadingInt           = parametrosHeading.getInt("idHeading");
 
-
         TextView idTariffheading = (TextView) findViewById(R.id.idTariffheading);
         TextView tariffSubheadingCode = (TextView) findViewById(R.id.tariffSubheadingCode);
         TextView tariffSuheadingDescription = (TextView) findViewById(R.id.tariffSuheadingDescription);
         //ImageView ivIconChapSubHead = (ImageView) findViewById(R.id.ivIconChapSubHead);
-
 
         idTariffheading.setText(idHeading);
         tariffSubheadingCode.setText(codeHeading);

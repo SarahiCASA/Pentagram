@@ -19,4 +19,8 @@ public final class ConstantesRestApi {
     public static final String KEY_POST_ID_DISPOSITIVO = "id_dispositivo/";
     public static final String KEY_POST_ID_USUARIO_INSTAGRAM = "id_usuario_instagram/";
     public static final String KEY_POST_ID_FOTO_INSTAGRAM = "id_foto_instagram/";
+
+    public static  final String KEY_POST_LIKE = "like-generado/";
+    public static  final String KEY_POST_ID_USR = "registrar-usuario/";
+    public static  final String KEY_POST_NOTIFICACION = "notifica-usuario/";
 }
